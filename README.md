@@ -4,5 +4,5 @@ Para usa-lo deve-se escrolar para baicho e ou utilizar os botões no cabeçalho 
 Este projeto se justifica uma vez que essa é uma técnica  vital para alcançarmos um furturo mais sustentáel e os agricultores precisam saber disso
 Referencias: 
 canva.com
-cloude.ai
+claude.ai
 https://www.idrparana.pr.gov.br/sites/iapar/arquivos_restritos/files/documento/2020-11/resultados_do_manejo_integrado_de_pragas_da_soja_na_safra_2018_2019.pdf
