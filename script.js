@@ -1,10 +1,7 @@
-// ===========================================================
-// MIP — Manejo Integrado de Pragas
-// ===========================================================
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* ---------- menu mobile ---------- */
+
   const alternadorNav = document.getElementById("alternadorNav");
   const navPrincipal = document.getElementById("navPrincipal");
 
