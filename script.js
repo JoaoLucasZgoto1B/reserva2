@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* ---------- revelar ao rolar a página ---------- */
+ 
   const elementosRevelar = document.querySelectorAll(
     ".pilar, .beneficio, .problema-grade p, .painel-mapa, .faixa-chamada, .etapas li, .caixa-acao"
   );
@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   elementosRevelar.forEach(el => io.observe(el));
 
-  /* ---------- legenda interativa do mapa ---------- */
   const notasRegiao = {
     noroeste: "<strong>Noroeste:</strong> concentra um número expressivo de municípios com MIP em curso, formando um dos blocos mais contínuos do mapa — mas ainda cercado de vizinhos sem cor.",
     norte: "<strong>Norte:</strong> é a região com a maior mancha colorida do estado, sinal de que a prática ganhou escala onde recebeu mais apoio técnico contínuo.",
