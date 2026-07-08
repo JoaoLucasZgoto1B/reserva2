@@ -13,13 +13,19 @@
 </head>
 <body>
 
+<!-- Textura visual de fundo em toda a página (ruído fractal) -->
 <div class="grao"></div>
 
+<!-- ===================================================
+     CABEÇALHO: Menu sticky com logo e navegação principal
+     =================================================== -->
 <header class="cabecalho-site" >
   <div class="contentor cabecalho-interno">
+    <!-- Logo/marca do site no canto esquerdo -->
     <a class="marca">
       <img src="imagem.png" alt="MIP — Manejo Integrado de Pragas" class="logo-marca">
     </a>
+    <!-- Navegação principal: links para cada seção -->
     <nav class="nav-principal" id="navPrincipal">
       <a href="#o-problema">O problema</a>
       <a href="#o-que-e">O que é o MIP</a>
@@ -27,6 +33,7 @@
       <a href="#beneficios">Benefícios</a>
       <a href="#comecar">Como começar</a>
     </nav>
+    <!-- Botão hambúrguer para abrir menu em mobile (inicialmente oculto) -->
     <button class="alternador-nav" id="alternadorNav" aria-label="Abrir menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -35,30 +42,41 @@
 
 <main>
 
+  <!-- ===================================================
+       SEÇÃO DESTAQUE: Hero section com título e chamadas de ação
+       =================================================== -->
   <section class="destaque" id="topo">
     <a class="comeco" href="#topo"></a>
     <div class="contentor destaque-grade">
+      <!-- Coluna esquerda: Texto principal -->
       <div class="destaque-texto">
         <p class="sobretitulo">Manejo Integrado de Pragas · Paraná</p>
         <h1>A lavoura não precisa escolher <em>entre proteger a safra e proteger o campo.</em></h1>
         <p class="destaque-resumo">O Manejo Integrado de Pragas combina observação, biologia e bom senso agronômico para controlar pragas gastando menos veneno, menos dinheiro e menos solo. No Paraná, a prática já prova seu valor — mas ainda está longe de cobrir o estado inteiro.</p>
+        <!-- Botões de ação: CTA primária (azul) e secundária (contorno) -->
         <div class="destaque-acoes">
           <a href="#mapa" class="botao botao-primario">Ver onde o MIP já chegou</a>
           <a href="#comecar" class="botao botao-contorno">Quero adotar na minha área</a>
         </div>
       </div>
+      <!-- Coluna direita: Animação visual com barras crescentes -->
       <div class="destaque-visual" aria-hidden="true">
         <div class="linhas-cultivo">
+          <!-- 8 barras que animam com delay para simular cultivo -->
           <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ===================================================
+       SEÇÃO 01 PROBLEMA: Por que MIP é necessário
+       =================================================== -->
   <section class="secao problema" id="o-problema">
     <div class="contentor estreito">
       <p class="secao-tag">01 — Por que isso importa</p>
       <h2>Pulverizar mais nem sempre significa proteger mais.</h2>
+      <!-- Grid com 2 parágrafos explicativos sobre o problema -->
       <div class="problema-grade">
         <p>O uso repetido dos mesmos inseticidas, ano após ano, tem um custo que não aparece na nota fiscal: pragas mais resistentes, inimigos naturais eliminados junto com a praga-alvo, e um solo que perde parte da vida que sustenta a próxima safra.</p>
         <p>O resultado é um ciclo conhecido por quem está na lavoura: aplica-se mais, o efeito dura menos, e o custo por hectare só sobe. Romper esse ciclo não exige abandonar o controle químico — exige usá-lo no momento certo, na dose certa, como parte de uma estratégia maior.</p>
@@ -66,28 +84,36 @@
     </div>
   </section>
 
+  <!-- ===================================================
+       SEÇÃO 02 O QUE É: Os 4 pilares do MIP
+       =================================================== -->
   <section class="secao" id="o-que-e">
     <div class="contentor">
       <p class="secao-tag">02 — O método</p>
       <h2>Quatro práticas, uma estratégia só.</h2>
       <p class="secao-intro">O MIP não é um produto nem uma receita fixa — é uma forma de decidir. Ele reúne monitoramento constante, controle biológico, limites técnicos para agir e manejo cultural do talhão. Nenhuma dessas práticas sozinha resolve; juntas, formam um sistema.</p>
 
+      <!-- Grid com 4 cards: cada pilar do MIP -->
       <div class="pilares">
+        <!-- PILAR 1: Monitoramento -->
         <article class="pilar">
           <span class="pilar-etiqueta">Monitorar</span>
           <h3>Amostragem no talhão</h3>
           <p>Contagem regular de pragas e inimigos naturais direto na lavoura, para saber exatamente o que está acontecendo antes de decidir qualquer coisa.</p>
         </article>
+        <!-- PILAR 2: Nível de dano econômico -->
         <article class="pilar">
           <span class="pilar-etiqueta">Decidir com critério</span>
           <h3>Nível de dano econômico</h3>
           <p>Só se aplica controle quando a praga atinge uma densidade que efetivamente ameaça o retorno da lavoura — não à primeira folha mordida.</p>
         </article>
+        <!-- PILAR 3: Controle biológico -->
         <article class="pilar">
           <span class="pilar-etiqueta">Usar a natureza</span>
           <h3>Controle biológico</h3>
           <p>Preservação e liberação de inimigos naturais — joaninhas, vespas parasitoides, fungos entomopatogênicos — que já fazem parte do controle antes de qualquer produto entrar em cena.</p>
         </article>
+        <!-- PILAR 4: Manejo cultural -->
         <article class="pilar">
           <span class="pilar-etiqueta">Planejar o talhão</span>
           <h3>Manejo cultural</h3>
@@ -97,67 +123,89 @@
     </div>
   </section>
 
+  <!-- ===================================================
+       SEÇÃO 03 MAPA: Mostra municípios com MIP + legenda interativa
+       =================================================== -->
   <section class="secao secao-mapa" id="mapa">
     <div class="contentor">
       <p class="secao-tag secao-tag--clara">03 — O retrato do estado</p>
       <h2>Onde o MIP já é rotina — e onde ainda é exceção.</h2>
       <p class="secao-intro secao-intro--clara">O mapa abaixo, produzido pela Emater, reúne os municípios paranaenses com estratégias de Manejo Integrado de Pragas em curso, organizados por macrorregião. As áreas coloridas mostram avanço real. As áreas em branco mostram o tamanho do trabalho que ainda falta.</p>
 
+      <!-- Painel com 2 colunas: mapa + legenda interativa -->
       <div class="painel-mapa">
+        <!-- COLUNA 1: Imagem do mapa -->
         <div class="painel-mapa-imagem">
           <img src="figura1.png" alt="Mapa do Paraná com os municípios que aplicam Manejo Integrado de Pragas, divididos nas regiões Noroeste, Norte, Oeste, Sudoeste e Sul" loading="lazy">
           <p class="mapa-credito">Ilustração: Milton Satoshi Matsushita (Emater)</p>
         </div>
 
+        <!-- COLUNA 2: Legenda interativa com botões por região -->
         <div class="painel-mapa-lateral">
           <p class="legenda-rotulo">Toque em uma região</p>
+          <!-- Lista de 5 botões: um para cada região do Paraná -->
           <div class="legenda-lista" id="listaLegenda">
+            <!-- Botão 1: Noroeste (amarelo) -->
             <button class="legenda-selo" data-regiao="noroeste" style="--chip-color:#e4e34d;">
               <span class="selo-cor"></span> Noroeste
             </button>
+            <!-- Botão 2: Norte (verde claro) -->
             <button class="legenda-selo" data-regiao="norte" style="--chip-color:#5aab4b;">
               <span class="selo-cor"></span> Norte
             </button>
+            <!-- Botão 3: Oeste (verde escuro) -->
             <button class="legenda-selo" data-regiao="oeste" style="--chip-color:#7d7a2e;">
               <span class="selo-cor"></span> Oeste
             </button>
+            <!-- Botão 4: Sudoeste (vermelho) -->
             <button class="legenda-selo" data-regiao="sudoeste" style="--chip-color:#d43a2f;">
               <span class="selo-cor"></span> Sudoeste
             </button>
+            <!-- Botão 5: Sul (azul) -->
             <button class="legenda-selo" data-regiao="sul" style="--chip-color:#5aa7d6;">
               <span class="selo-cor"></span> Sul
             </button>
           </div>
 
+          <!-- Box que muda de conteúdo ao clicar em uma região -->
           <div class="regiao-nota" id="notaRegiao">
             <p><strong>Todas as regiões:</strong> mesmo somando as cinco cores do mapa, uma parte considerável dos municípios do Paraná segue sem registro de manejo integrado. Cada mancha branca é uma lavoura ainda dependendo só do calendário de pulverização.</p>
           </div>
         </div>
       </div>
 
+      <!-- Chamada de ação enfatizando necessidade de expansão -->
       <div class="faixa-chamada">
         <p>Um estado do tamanho e da relevância agrícola do Paraná não pode depender de bolsões isolados de boa prática. Ampliar o MIP para os municípios ainda em branco no mapa é o próximo passo — e ele passa por assistência técnica, troca de informação entre produtores e decisão de quem está no talhão hoje.</p>
       </div>
     </div>
   </section>
 
+  <!-- ===================================================
+       SEÇÃO 04 BENEFÍCIOS: Grid com 4 vantagens do MIP
+       =================================================== -->
   <section class="secao" id="beneficios">
     <div class="contentor">
       <p class="secao-tag">04 — O retorno</p>
       <h2>O que muda quando o manejo é integrado.</h2>
+      <!-- Grid com 4 cards de benefícios -->
       <div class="beneficios-grade">
+        <!-- BENEFÍCIO 1: Menos aplicações -->
         <article class="beneficio">
           <h3>Menos aplicações, mesmo resultado</h3>
           <p>Ao agir só quando o nível de dano justifica, o produtor reduz o número de pulverizações sem abrir mão da proteção da lavoura.</p>
         </article>
+        <!-- BENEFÍCIO 2: Pragas menos resistentes -->
         <article class="beneficio">
           <h3>Pragas menos resistentes</h3>
           <p>Alternar estratégias de controle diminui a pressão de seleção que cria populações resistentes aos mesmos princípios ativos.</p>
         </article>
+        <!-- BENEFÍCIO 3: Inimigos naturais preservados -->
         <article class="beneficio">
           <h3>Inimigos naturais preservados</h3>
           <p>Menos aplicações amplas significam mais joaninhas, vespas e fungos benéficos trabalhando de graça a favor da lavoura.</p>
         </article>
+        <!-- BENEFÍCIO 4: Custo previsível -->
         <article class="beneficio">
           <h3>Custo por hectare mais previsível</h3>
           <p>Decisões baseadas em monitoramento evitam gasto com produto em momentos que não trariam retorno real.</p>
@@ -166,19 +214,28 @@
     </div>
   </section>
 
+  <!-- ===================================================
+       SEÇÃO 05 COMO COMEÇAR: 4 passos práticos para adotar MIP
+       =================================================== -->
   <section class="secao comecar" id="comecar">
     <div class="contentor estreito">
       <p class="secao-tag">05 — Primeiros passos</p>
       <h2>Começar não exige trocar o sistema inteiro amanhã.</h2>
       <p class="secao-intro">O MIP se constrói talhão por talhão, safra por safra. Estes são os passos que costumam abrir a porta.</p>
 
+      <!-- Lista numerada com 4 etapas iniciais -->
       <ol class="etapas">
+        <!-- ETAPA 1: Procurar assistência técnica -->
         <li><h3>Procure a assistência técnica da sua região</h3><p>Emater, cooperativas e engenheiros agrônomos locais já têm protocolos de monitoramento prontos para o seu cultivo.</p></li>
+        <!-- ETAPA 2: Começar monitoramento piloto -->
         <li><h3>Comece o monitoramento em um talhão piloto</h3><p>Escolha uma área para testar a amostragem regular antes de expandir a prática para toda a propriedade.</p></li>
+        <!-- ETAPA 3: Registrar dados -->
         <li><h3>Registre o que encontrar</h3><p>Anotações simples de pragas e inimigos naturais ao longo do tempo já embasam decisões melhores do que a memória.</p></li>
+        <!-- ETAPA 4: Trocar experiências -->
         <li><h3>Troque experiência com vizinhos</h3><p>Municípios que aparecem coloridos no mapa começaram assim: um produtor mostrando ao outro que funciona.</p></li>
       </ol>
 
+      <!-- Caixa final: Mensagem motivadora + botão de retorno ao topo -->
       <div class="caixa-acao">
         <p>Quanto mais produtores adotarem o MIP, menor a pressão de pragas na região inteira — porque manejo integrado funciona melhor em escala de paisagem, não só de talhão isolado.</p>
         <a href="#topo" class="botao botao-primario">Voltar ao início</a>
@@ -188,9 +245,14 @@
 
 </main>
 
+<!-- ===================================================
+     RODAPÉ: Informações finais e créditos
+     =================================================== -->
 <footer class="rodape-site">
   <div class="contentor rodape-interno">
+    <!-- Logo do rodapé -->
     <img src="imagem.png" alt="MIP — Manejo Integrado de Pragas" class="logo-rodape">
+    <!-- Textos descritivos e créditos -->
     <div class="rodape-texto">
       <p>Site educativo sobre Manejo Integrado de Pragas, com foco no estado do Paraná.</p>
       <p class="rodape-credito">Mapa: ilustração de Milton Satoshi Matsushita (Emater).</p>
@@ -198,6 +260,7 @@
   </div>
 </footer>
 
+<!-- Script com interatividades: menu mobile, reveal animations e legenda -->
 <script src="script.js"></script>
 </body>
 </html>
