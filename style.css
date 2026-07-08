@@ -1,7 +1,4 @@
-/* ===========================================================
-   MIP — Manejo Integrado de Pragas
-   Tokens
-   =========================================================== */
+
 :root{
   --verde-escuro:#1F3620;
   --verde-campo:#4B7A3E;
@@ -35,16 +32,14 @@ a{color:inherit;}
 .contentor{max-width:var(--contentor);margin:0 auto;padding:0 28px;}
 .estreito{max-width:760px;}
 
-/* textura sutil de granulado sobre toda a página */
+
 .grao{
   position:fixed;inset:0;pointer-events:none;z-index:999;
   opacity:.035;mix-blend-mode:multiply;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
-/* ===========================================================
-   Header
-   =========================================================== */
+
 .cabecalho-site{
   position:sticky;top:0;z-index:50;
   background:rgba(244,238,221,.88);
@@ -75,9 +70,7 @@ a{color:inherit;}
 }
 .alternador-nav span{display:block;height:2px;background:var(--verde-escuro);border-radius:2px;}
 
-/* ===========================================================
-   Hero
-   =========================================================== */
+
 .destaque{padding:88px 0 72px;}
 .destaque-grade{
   display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;
@@ -108,7 +101,7 @@ a{color:inherit;}
 .botao-contorno{border-color:var(--verde-escuro);color:var(--verde-escuro);}
 .botao-contorno:hover{background:var(--verde-escuro);color:var(--branco);}
 
-/* visual de destaque: fileiras de plantio animando como crescimento */
+
 .destaque-visual{
   height:340px;border-radius:22px;overflow:hidden;
   background:linear-gradient(180deg,#DCE9C9 0%, var(--creme) 75%);
@@ -141,9 +134,7 @@ a{color:inherit;}
   html{scroll-behavior:auto;}
 }
 
-/* ===========================================================
-   Estrutura das seções
-   =========================================================== */
+
 .secao{padding:84px 0;}
 .secao-tag{
   font-family:var(--mono);font-size:.78rem;letter-spacing:.06em;
@@ -158,18 +149,18 @@ a{color:inherit;}
 .secao-intro{font-size:1.05rem;line-height:1.65;color:#3f4d3b;max-width:68ch;margin:0 0 8px;}
 .secao-intro--clara{color:#dfeaf0;}
 
-/* revelar on scroll */
+
 .revelar{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease;}
 .revelar.visivel{opacity:1;transform:translateY(0);}
 
-/* problema */
+
 .problema{background:var(--branco);}
 .problema-grade{
   display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:28px;
 }
 .problema-grade p{font-size:1.02rem;line-height:1.65;color:#3f4d3b;margin:0;}
 
-/* pilares */
+
 .pilares{
   display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px;
 }
@@ -187,9 +178,7 @@ a{color:inherit;}
 }
 .pilar p{font-size:.94rem;line-height:1.55;color:#465542;margin:0;}
 
-/* ===========================================================
-   Mapa — painel de destaque
-   =========================================================== */
+
 .secao-mapa{
   background:var(--verde-escuro);
   background-image:radial-gradient(circle at 15% 20%, rgba(74,160,206,.16), transparent 55%);
@@ -246,9 +235,7 @@ a{color:inherit;}
 }
 .faixa-chamada p{margin:0;font-size:1rem;line-height:1.65;color:#e7efe2;max-width:72ch;}
 
-/* ===========================================================
-   Benefícios
-   =========================================================== */
+
 .beneficios-grade{
   display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:36px;
 }
@@ -263,9 +250,6 @@ a{color:inherit;}
 }
 .beneficio p{font-size:.92rem;line-height:1.55;color:#465542;margin:0;}
 
-/* ===========================================================
-   Como começar
-   =========================================================== */
 .comecar{background:var(--branco);}
 .etapas{
   list-style:none;counter-reset:passo;margin:36px 0 0;padding:0;
@@ -294,18 +278,14 @@ a{color:inherit;}
 }
 .caixa-acao p{margin:0;max-width:58ch;line-height:1.6;color:#e7efe2;}
 
-/* ===========================================================
-   Footer
-   =========================================================== */
+
 .rodape-site{background:var(--verde-escuro);color:#cdd8c8;padding:40px 0;}
 .rodape-interno{display:flex;align-items:center;gap:20px;}
 .logo-rodape{height:34px;width:auto;filter:brightness(0) invert(1);opacity:.9;}
 .rodape-texto p{margin:0 0 4px;font-size:.86rem;}
 .rodape-credito{color:#8fa284;font-family:var(--mono);font-size:.76rem;}
 
-/* ===========================================================
-   Responsive
-   =========================================================== */
+
 @media (max-width: 920px){
   .destaque-grade{grid-template-columns:1fr;}
   .destaque-visual{order:-1;height:220px;}
