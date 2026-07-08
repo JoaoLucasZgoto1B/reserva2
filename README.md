@@ -1,5 +1,6 @@
 #Agrinho 2026
-O objetivo desse site é informar o leitor sobre as formas de se implantar as tecnicas de Maneijo Integrado de Pragas. Este projeto se justifica uma vez que essa é uma técnica  vital para alcançarmos um furturo mais sustentáel e os agricultores precisam saber disso
+O objetivo desse site é informar o leitor sobre as formas de se implantar as tecnicas de Maneijo Integrado de Pragas. 
+Este projeto se justifica uma vez que essa é uma técnica  vital para alcançarmos um furturo mais sustentáel e os agricultores precisam saber disso
 Referencias: 
 canva.com
 cloude.com
